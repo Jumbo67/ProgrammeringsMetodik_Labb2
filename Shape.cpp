@@ -4,22 +4,14 @@
 
 #include "Shape.h"
 
+Shape::Shape(std::string color) : color(color){
+}
+
 const std::string &Shape::getColor() const {
     return color;
 }
 
 void Shape::setColor(const std::string &color) {
     Shape::color = color;
-}
-
-double Shape::getArea() const {
-    return area;
-}
-
-void Shape::setArea(double area) {
-    Shape::area = area;
-}
-
-Shape::Shape(std::string color, double area) : color(color), area(area) {
 }
 

@@ -9,6 +9,11 @@
 #include "Shape.h"
 
 class Rectangle : public Shape{
+    double width, height;
+
+public:
+    Rectangle(std::string color, double width, double height);
+    double getArea() const;
 
 };
 

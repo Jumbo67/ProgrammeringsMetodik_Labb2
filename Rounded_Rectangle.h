@@ -7,8 +7,14 @@
 
 
 #include "Rectangle.h"
+#include "math.h"
 
 class Rounded_Rectangle : public Rectangle{
+    double cornerRadius;
+
+    Rounded_Rectangle(std::string color,
+                      double width, double height, double cornerRadius);
+    double getArea() const;
 
 };
 

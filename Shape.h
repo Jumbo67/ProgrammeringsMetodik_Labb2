@@ -9,14 +9,11 @@
 
 class Shape {
     std::string color;
-    double area;
 public:
-    Shape(std::string color, double area);
-
+    Shape(std::string color);
     const std::string &getColor() const;
     void setColor(const std::string &color);
     virtual double getArea() const = 0;
-    virtual void setArea(double area) = 0;
 
 };
 

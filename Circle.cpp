@@ -3,3 +3,14 @@
 //
 
 #include "Circle.h"
+
+Circle::Circle(std::string color, double diameter) : Shape(color), diameter(diameter) {
+}
+
+double Circle::getArea() const {
+    return M_PI * pow(diameter/2, 2);
+}
+
+double Circle::getDiameter() const{
+    return diameter;
+}

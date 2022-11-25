@@ -1,3 +1,3 @@
-/home/vincent/CLionProjects/ProgMetodik/Labb2/cmake-build-debug/CMakeFiles/Labb2.dir
-/home/vincent/CLionProjects/ProgMetodik/Labb2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/vincent/CLionProjects/ProgMetodik/Labb2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/Git/ProgrammeringsMetodik_Labb2/cmake-build-debug/CMakeFiles/Labb2.dir
+E:/Git/ProgrammeringsMetodik_Labb2/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Git/ProgrammeringsMetodik_Labb2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
