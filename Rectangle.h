@@ -14,6 +14,8 @@ class Rectangle : public Shape{
 public:
     Rectangle(std::string color, double width, double height);
     double getArea() const;
+    double getWidth() const;
+    double getHeight() const;
 
 };
 

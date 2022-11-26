@@ -8,7 +8,7 @@
 
 #include "Circle.h"
 
-class Cylinder : Circle {
+class Cylinder : public Circle {
     double height;
 public:
     Cylinder(std::string color, double diameter, double height);

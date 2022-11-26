@@ -9,7 +9,12 @@
 #include "Rectangle.h"
 
 class Parallel_Piped : public Rectangle{
+    double length;
+public:
+    Parallel_Piped(std::string color, double width, double height, double length);
 
+    double getArea() const override;
+    double getVolume() const;
 };
 
 

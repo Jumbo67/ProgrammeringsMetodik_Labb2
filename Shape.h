@@ -14,6 +14,7 @@ public:
     const std::string &getColor() const;
     void setColor(const std::string &color);
     virtual double getArea() const = 0;
+    virtual ~Shape() = default;
 
 };
 

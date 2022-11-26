@@ -11,3 +11,11 @@ Shape(color), width(width), height(height) {
 double Rectangle::getArea() const {
     return (height*width);
 }
+
+double Rectangle::getWidth() const {
+    return width;
+}
+
+double Rectangle::getHeight() const {
+    return height;
+}
