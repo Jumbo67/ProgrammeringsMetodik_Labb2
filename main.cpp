@@ -7,7 +7,7 @@
 #include "Parallel_Piped.h"
 
 using shape_ptr = std::unique_ptr<Shape>;
-void print(std::vector<shape_ptr>& shapes);
+void getData(std::vector<shape_ptr>& shapes);
 
 int main() {
 
@@ -17,7 +17,7 @@ int main() {
     ptrList.push_back(std::make_unique<Cylinder>("Black", 10, 10));
     ptrList.push_back(std::make_unique<Parallel_Piped>("Purple", 10, 10, 10));
 
-    print(ptrList);
+    getData(ptrList);
 
 
 
@@ -25,7 +25,7 @@ int main() {
     return 0;
 }
 
-void print(std::vector<shape_ptr>& shapes) {
+void getData(std::vector<shape_ptr>& shapes) {
     for(auto& shape : shapes) {
             std::cout << "Type: " << typeid(*shape).name() << ", " << "Color: " << shape->getColor() << ", area: " << shape->getArea();
             Cylinder* cy_p = dynamic_cast<Cylinder*>(shape.get());
