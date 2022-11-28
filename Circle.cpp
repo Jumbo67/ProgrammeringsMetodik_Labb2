@@ -4,7 +4,7 @@
 
 #include "Circle.h"
 
-Circle::Circle(std::string color, double diameter) : Shape(color), diameter(diameter) {
+Circle::Circle(const char* color, double diameter) : Shape(color), diameter(diameter) {
 }
 
 double Circle::getArea() const {

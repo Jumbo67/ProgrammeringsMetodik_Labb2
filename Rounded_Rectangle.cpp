@@ -4,11 +4,13 @@
 
 #include "Rounded_Rectangle.h"
 
-Rounded_Rectangle::Rounded_Rectangle(std::string color, double width, double height, double cornerRadius) :
-        Rectangle(color, width, height), cornerRadius(cornerRadius)
+Rounded_Rectangle::Rounded_Rectangle(const char* color, double width, double height, double radius) :
+        Rectangle(color, width, height), circle_radius("None",radius)
                                      {
 }
 
 double Rounded_Rectangle::getArea() const {
-    return Rectangle::getArea() - pow(cornerRadius, 2) * (4 - M_PI);
+    double radius = circle_radius.getDiameter()/2;
+    Rectangle corner_rec("None", radius, radius);
+    return Rectangle::getArea() - 4 * corner_rec.getArea() + circle_radius.getArea();
 }

@@ -4,7 +4,7 @@
 
 #include "Rectangle.h"
 
-Rectangle::Rectangle(std::string color, double width, double height) :
+Rectangle::Rectangle(const char* color, double width, double height) :
 Shape(color), width(width), height(height) {
 }
 

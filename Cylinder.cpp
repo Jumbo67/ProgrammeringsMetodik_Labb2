@@ -4,7 +4,7 @@
 
 #include "Cylinder.h"
 
-Cylinder::Cylinder(std::string color, double diameter, double height) : Circle(color, diameter), height(height) {
+Cylinder::Cylinder(const char* color, double diameter, double height) : Circle(color, diameter), height(height) {
 }
 
 double Cylinder::getArea() const {

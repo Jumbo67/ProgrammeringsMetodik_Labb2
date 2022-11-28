@@ -7,12 +7,12 @@
 
 
 #include "Shape.h"
-#include "math.h"
+#include "cmath"
 
 class Circle : public Shape{
     double diameter;
 public:
-    Circle(std::string color, double diameter);
+    Circle(const char* color, double diameter);
     double getDiameter() const;
     double getArea() const;
 };

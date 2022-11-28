@@ -2,9 +2,9 @@
 #include <vector>
 #include "memory"
 #include "Shape.h"
-#include "Rectangle.h"
 #include "Cylinder.h"
 #include "Parallel_Piped.h"
+#include "Rounded_Rectangle.h"
 
 using shape_ptr = std::unique_ptr<Shape>;
 void getData(std::vector<shape_ptr>& shapes);
@@ -15,12 +15,11 @@ int main() {
 
     ptrList.push_back(std::make_unique<Rectangle>("Red", 10, 10));
     ptrList.push_back(std::make_unique<Cylinder>("Black", 10, 10));
+    ptrList.push_back(std::make_unique<Circle>("Violet", 10));
     ptrList.push_back(std::make_unique<Parallel_Piped>("Purple", 10, 10, 10));
+    ptrList.push_back(std::make_unique<Rounded_Rectangle>("Blue", 10, 10, 10));
 
     getData(ptrList);
-
-
-
 
     return 0;
 }

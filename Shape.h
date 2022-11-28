@@ -8,11 +8,10 @@
 #include <iostream>
 
 class Shape {
-    std::string color;
+    const char* color;
 public:
-    Shape(std::string color);
-    const std::string &getColor() const;
-    void setColor(const std::string &color);
+    Shape(const char* color);
+    const char* getColor() const;
     virtual double getArea() const = 0;
     virtual ~Shape() = default;
 

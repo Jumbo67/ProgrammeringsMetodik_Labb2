@@ -4,14 +4,8 @@
 
 #include "Shape.h"
 
-Shape::Shape(std::string color) : color(color){
+Shape::Shape(const char* color) : color(color){
 }
-
-const std::string &Shape::getColor() const {
-    return color;
+const char* Shape::getColor() const {
+    return this->color;
 }
-
-void Shape::setColor(const std::string &color) {
-    Shape::color = color;
-}
-

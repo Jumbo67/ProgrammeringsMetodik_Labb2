@@ -4,7 +4,7 @@
 
 #include "Parallel_Piped.h"
 
-Parallel_Piped::Parallel_Piped(std::string color, double width, double height, double length) :
+Parallel_Piped::Parallel_Piped(const char* color, double width, double height, double length) :
 Rectangle(color, width, height), length(length)
 {
 

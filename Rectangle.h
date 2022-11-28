@@ -12,7 +12,7 @@ class Rectangle : public Shape{
     double width, height;
 
 public:
-    Rectangle(std::string color, double width, double height);
+    Rectangle(const char* color, double width, double height);
     double getArea() const;
     double getWidth() const;
     double getHeight() const;
